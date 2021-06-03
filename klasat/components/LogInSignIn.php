@@ -82,7 +82,7 @@
               <i class="fas fa-lock"></i>
               <input type="password" name="cpassword" placeholder="Confirm Password" />
             </div>
-            <input type="submit" name="submit2" class="btn" value="Krijo" />
+            <input type="submit" name="submit2" id="submit2" class="btn" value="Krijo" />
             
           </form>
         </div>

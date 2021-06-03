@@ -34,7 +34,7 @@ public function verifyData()
             header('Location:../../klasat/components/LogInSignIn.php?error');
         } 
         else if ($this->usernameAndPasswordCorrect($this->username, $this->password)) {
-            header('Location:../../klasat/components/LogInSignIn.php');
+            header('Location:../../klasat/index.php');
         }
         
         else{
@@ -58,11 +58,11 @@ private function usernameAndPasswordCorrect($username, $password)
     if ($user == null || count($user) == 0)   header('Location:../../klasat/components/LogInSignIn.php?error');
     else if (password_verify($password,$user['password'])) {
         if ($user['role'] == 1) {
-            $obj = new Admin($user['emri'],$user['mbiemri'],$user['username'], $user['password'],$user['cpassword'],$user['email'], $user['role']);
+            $obj = new Admin($user['emri'],$user['mbiemri'],$user['username'], $user['email'],$user['password'],$user['cpassword'],$user['role']);
             $obj->setSession();
             $_SESSION['username']=$_REQUEST['username'];
         } else {
-            $obj = new SimpleUser($user['emri'],$user['mbiemri'],$user['username'], $user['password'],$user['cpassword'],$user['email'], $user['role']);
+            $obj = new SimpleUser($user['emri'],$user['mbiemri'],$user['username'],$user['email'],$user['password'],$user['cpassword'],$user['role']);
             $obj->setSession();
         }
         return true;
