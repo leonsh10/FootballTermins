@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../stilizimi/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link rel="icon" href="../Pics/logo.png">
+    <link rel="icon" href="../../Pics/logo.png">
     <title>Termini YT</title>  
 </head>
 <body>
@@ -16,8 +16,8 @@
         <a href="index.php"><img class="llogo" src="../../Pics/logo1.png" alt=""></a>
         <div class="topnav">
         <div class="topnav">
-            <a class="act" href="#">Kryefaqja</a>
-            <a href="./Historia.php">Historia</a>
+            <a href="index.php">Kryefaqja</a>
+            <a href="Historia.php">Historia</a>
             <a href="#">Terminet</a>
             <a href="#">Shto Terminin</a>
             <a href="#">Kontakti</a>
