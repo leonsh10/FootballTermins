@@ -76,6 +76,8 @@ class UserMapper extends dboconfig
         $this->query = "update user set emri=:emri, mbiemri=:mbiemri,username=:username, email=:email, role=:role where id_user=:id_user";
         // var_dump($user);
         $statement = $this->conn->prepare($this->query);
+        $emri = $user->getEmri();
+        $mbiemri = $user->getMbiemri();
         $username = $user->getUsername();
         $email = $user->getEmail();
         $role=$user->getRole();

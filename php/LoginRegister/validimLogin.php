@@ -34,7 +34,7 @@ public function verifyData()
             header('Location:../../klasat/components/LogInSignIn.php?error');
         } 
         else if ($this->usernameAndPasswordCorrect($this->username, $this->password)) {
-            header('Location:../../klasat/index.php');
+            header('Location:../../klasat/components/index.php');
         }
         
         else{
