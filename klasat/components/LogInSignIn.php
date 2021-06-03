@@ -17,46 +17,70 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="#" class="sign-in-form">
+          <form action="../../php/LoginRegister/validimLogin.php" method="post" class="sign-in-form">
+            <div id="errori" style="height:30px;margin-top:-15px; background-color:#1a1a1a;color:red;font-family: montserrat, sans-serif;text-align:center; ">
+              <?php
+                      $Msg="";
+                      if(isset($_GET['error'])){
+                  $Msg=" Ploteso te dhenat!! ";
+                  echo $Msg;    
+                      }
+                  else if(isset($_GET['errori'])){
+                      $Msg=" Username ose Password GABIM! ";
+                      echo $Msg;   
+              }           
+          ?>
+          </div> 
             <h2 class="title">Kyqu</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" name="username" placeholder="Username" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" name="password" placeholder="Password" />
             </div>
             <input type="submit" value="Kyqu" class="btn solid" />
             
           
           </form>
-          <form action="#" class="sign-up-form">
+         
+
+          <form action="../../php/LoginRegister/validimRegister.php" method="post" class="sign-up-form">
+          <div id="errori" style="height:15px; margin-top:-9px ;margin-bottom:7px ;background-color:#1a1a1a;color:red;font-family: montserrat, sans-serif;text-align:center; ">
+            <?php
+                         $Msg="";
+                         if(isset($_GET['error'])){
+                         $Msg=" Please Fill All Your Data ";
+                         echo $Msg;    
+                                    }             
+            ?>
+                    </div> 
             <h2 class="title">Profil i ri </h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Emri" />
+              <input type="text" name="emri" placeholder="Emri" />
             </div>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Mbiemri" />
+              <input type="text" name="mbiemri" placeholder="Mbiemri" />
             </div>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" name="username" placeholder="Username" />
             </div>
       
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" name="email" placeholder="Email" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" name="password" placeholder="Password" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Confirm Password" />
+              <input type="password" name="cpassword" placeholder="Confirm Password" />
             </div>
             <input type="submit" class="btn" value="Krijo" />
             
