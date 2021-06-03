@@ -4,7 +4,7 @@
 // include('variables.php');
 include_once 'adminClass.php';
 include_once 'simpleUserClass.php';
-require_once 'userMapper.php';
+require_once '../userMapper.php';
 session_start();
 
 if (isset($_POST['submit'])) {

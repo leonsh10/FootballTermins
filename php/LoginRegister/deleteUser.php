@@ -1,5 +1,5 @@
 <?php
-include_once 'userMapper.php';
+include_once '../userMapper.php';
 if (isset($_GET['id_user'])) {
     $id_user = $_GET['id_user'];
     $mapper = new UserMapper();

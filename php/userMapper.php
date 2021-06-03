@@ -67,12 +67,7 @@ class UserMapper extends dboconfig
         $statement->bindParam(":id_user", $id_user);
         $statement->execute();
     }
-
- 
-
-
     
-
     public function edit(\SimpleUser $user, $id_user)
     {
         $this->query = "update user set emri=:emri, mbiemri=:mbiemri,username=:username, email=:email, role=:role where id_user=:id_user";

@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once 'userMapper.php';
+require_once '../userMapper.php';
 include_once 'simpleUserClass.php';
 include_once 'adminClass.php';
 if(isset($_POST['submit'])){
