@@ -1,0 +1,36 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Footer */
+.footerContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(46, 43, 43);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footerleft:last-child{
+    padding-top: 5px;
+}
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+}
+.footerLinks>a{
+    text-decoration: none;
+    color: white;
+}
+.size{
+    height: 170px;
+    width: 200px;
+}
+.footerCopyRights{
+}
