@@ -17,7 +17,7 @@ if(isset($_POST['submit2'])){
     ){
         header('Location:../../klasat/components/LogInSignIn.php?erroriReg');
     }
-    else if (isset($_POST['submit'])) {
+    else if (isset($_POST['submit2'])) {
         $register = new RegisterLogic($_POST);
         $register->insertData();
         header('Location:../../klasat/components/LogInSignIn.php');
