@@ -20,7 +20,7 @@
             <a href="Historia.php">Historia</a>
             <a href="#">Terminet</a>
             <a href="#">Shto Terminin</a>
-            <a href="#">Kontakti</a>
+            <a href="contact.php">Kontakti</a>
             <a class="login" href="./LogInSignIn.php">Log In/Sign Up</a>
         </div>
     </header>

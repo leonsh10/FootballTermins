@@ -8,6 +8,7 @@ body{
 }
 /* Footer */
 .footerContent{
+    padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -18,8 +19,8 @@ body{
 }
 
 .footerleft:last-child{
-    padding-top: 5px;
-}
+    /* padding-top: 5px; */
+} 
 .footerLinks{
     display: flex;
     flex-direction: column;
