@@ -50,7 +50,7 @@
             </div>
             <div class="information">
               <img src="../../Pics/phone.png" class="icon" alt="" />
-              <p>+383 (0) 49 435 604</p>
+              <p>+383 (0) 44 000 000</p>
             </div>
           </div>
 
