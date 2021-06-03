@@ -14,6 +14,8 @@
   
   </head>
   <body>
+    <div style="width: 100%; height: 25px; background-color: #272727;">
+    <a href="../index.php" style="float: right; color: black; text-decoration: none; back"><i class="fa fa-home" aria-hidden="true"></i></a> </div>
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
@@ -82,7 +84,7 @@
               <i class="fas fa-lock"></i>
               <input type="password" name="cpassword" placeholder="Confirm Password" />
             </div>
-            <input type="submit" name="submit2" class="btn" value="Krijo" />
+            <input type="submit" name="submit2" id="submit2" class="btn" value="Krijo" />
             
           </form>
         </div>

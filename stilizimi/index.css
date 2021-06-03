@@ -32,5 +32,36 @@ body{
     height: 170px;
     width: 200px;
 }
-.footerCopyRights{
+
+.topnav {
+    background-color: rgb(58, 57, 57);
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 33px 25px 26px 25px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.topnav a:hover {
+    background-color: rgb(46, 44, 44);
+    color:white;
+}
+.topnav a.act {
+    background-color: rgb(46, 44, 44);
+    color: white;
+}
+.topnav a.login{
+    float: right;
+}
+header{
+    background-color: rgb(53, 51, 51); 
+}
+.llogo{
+    float: left;
+    height: 77px;
+    width: 100px;
+    background-color: rgb(58, 57, 57);
 }
