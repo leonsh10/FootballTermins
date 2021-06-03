@@ -15,19 +15,19 @@ if(isset($_POST['submit'])){
     if(verifyEmpty($username,$password,$email,$emri,$mbiemri,$cpassword) || preg_match('/^[a-zA-Z0-9]{5,30}+$/', $username) == false
     || filter_var($email, FILTER_VALIDATE_EMAIL) == false
     ){
-        header('Location:LogInSignIn.php?error');
+        header('Location:../../klasat/components/LogInSignIn.php?error');
     }
     else if (isset($_POST['submit'])) {
         $register = new RegisterLogic($_POST);
         $register->insertData();
-        header('Location:LogInSignIn.php');
+        header('Location:../../klasat/components/LogInSignIn.php');
     }
     else{
-        header('Location:LogInSignIn.php');
+        header('Location:../../klasat/components/LogInSignIn.php');
     }
 }
 else{
-    echo("U shtua me sukses");
+   
 }
 
 function verifyEmpty($username,$password,$email,$emri,$mbiemri,$cpassword){
@@ -47,8 +47,8 @@ class RegisterLogic
 
     public function __construct($formData)
     {
-        $this->emri = $formData['username'];
-        $this->mbiemri = $formData['password'];
+        $this->emri = $formData['emri'];
+        $this->mbiemri = $formData['mbiemri'];
         $this->username = $formData['username'];
         $this->email = $formData['email'];
         $this->password = $formData['password'];
@@ -60,7 +60,7 @@ class RegisterLogic
         $user = new SimpleUser($this->emri, $this->mbiemri,$this->username,$this->email, $this->password,$this->cpassword,0);
         $mapper = new UserMapper();
         $mapper->insertUser($user);
-        header("Location:LogInSignIn.php");
+        header('Location:../../klasat/components/LogInSignIn.php');
     }
 }
 
