@@ -27,6 +27,7 @@ if(isset($_POST['submit'])){
     }
 }
 else{
+    echo("U shtua me sukses");
 }
 
 function verifyEmpty($username,$password,$email,$emri,$mbiemri,$cpassword){

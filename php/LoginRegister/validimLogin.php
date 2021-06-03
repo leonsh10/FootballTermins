@@ -34,7 +34,7 @@ public function verifyData()
             header('Location:LogInSignIn.php?error');
         } 
         else if ($this->usernameAndPasswordCorrect($this->username, $this->password)) {
-            header('Location:index.php');
+            header('Location:LogInSignIn.php');
         }
         
         else{

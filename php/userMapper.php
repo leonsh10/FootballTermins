@@ -44,11 +44,14 @@ class UserMapper extends dboconfig
 
     public function insertUser(\SimpleUser $user)
     {
-        $this->query = "insert into user (Emri,Mbiemri,Username,Email,password,CPassword, role) values (:emri,:mbiemri,:username,:email,:password,:cpassword,:role)";
+        $this->query = "insert into user (emri,mbiemri,username,email,password,cpassword, role) values (:emri,:mbiemri,:username,:email,:password,:cpassword,:role)";
         $statement = $this->conn->prepare($this->query);
+        $emri = $user->getEmri();
+        $mbiemri = $user->getMbiemri();
         $username = $user->getUsername();
         $email = $user->getEmail();
         $password = password_hash($user->getPassword(), PASSWORD_BCRYPT);
+        $cpassword = password_hash($user->getCPassword(), PASSWORD_BCRYPT);
         $role = $user->getRole();
         $statement->bindParam(":emri", $emri);
         $statement->bindParam(":mbiemri", $mbiemri);
@@ -67,7 +70,7 @@ class UserMapper extends dboconfig
         $statement->bindParam(":id_user", $id_user);
         $statement->execute();
     }
-    
+
     public function edit(\SimpleUser $user, $id_user)
     {
         $this->query = "update user set emri=:emri, mbiemri=:mbiemri,username=:username, email=:email, role=:role where id_user=:id_user";

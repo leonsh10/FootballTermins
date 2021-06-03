@@ -40,7 +40,7 @@
               <i class="fas fa-lock"></i>
               <input type="password" name="password" placeholder="Password" />
             </div>
-            <input type="submit" value="Kyqu" class="btn solid" />
+            <input type="submit" name="submit" value="Kyqu" class="btn solid" />
             
           
           </form>
@@ -82,7 +82,7 @@
               <i class="fas fa-lock"></i>
               <input type="password" name="cpassword" placeholder="Confirm Password" />
             </div>
-            <input type="submit" class="btn" value="Krijo" />
+            <input type="submit" name="submit" class="btn" value="Krijo" />
             
           </form>
         </div>
