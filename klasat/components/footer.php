@@ -7,8 +7,8 @@
             </div>
             <div class="footerLinks size">
                 <h5>EXPLORE</h5>
-                <a href="#">Kryefaqja</a>
-                <a href="#">Historia</a>
+                <a href="index.php">Kryefaqja</a>
+                <a href="./components/Historia.php">Historia</a>
                 <a href="#">Terminet</a>
                 <a href="#">Shto Terminin</a>
             </div>
@@ -33,7 +33,7 @@
                 <p>terminiyt@gmail.com</p>
             </div>
             <div class="footerCopyRights size">
-                <h5><i>&copy;</i>2021 Envoy. All Rights Reserved</h5>
+                <h5><i>&copy;</i>2021 TY. All Rights Reserved</h5>
             </div>
         </div>
     </footer>

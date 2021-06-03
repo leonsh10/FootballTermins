@@ -1,9 +1,9 @@
 <?php 
     include './header.php'
 ?>
-    <div class="titulli">
-        <h1>TERMINET E MIA</h1>
-    </div>
+    <content>
+        
+    </content>
 <?php 
     include './footer.php'
 ?>
