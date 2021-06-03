@@ -4,7 +4,7 @@ session_start();
 require_once '../userMapper.php';
 include_once 'simpleUserClass.php';
 include_once 'adminClass.php';
-if(isset($_POST['submit'])){
+if(isset($_POST['submit2'])){
     $emri=$_POST['emri'];
     $mbiemri=$_POST['mbiemri'];
     $username=$_POST['username'];
@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
     if(verifyEmpty($username,$password,$email,$emri,$mbiemri,$cpassword) || preg_match('/^[a-zA-Z0-9]{5,30}+$/', $username) == false
     || filter_var($email, FILTER_VALIDATE_EMAIL) == false
     ){
-        header('Location:../../klasat/components/LogInSignIn.php?error');
+        header('Location:../../klasat/components/LogInSignIn.php?erroriReg');
     }
     else if (isset($_POST['submit'])) {
         $register = new RegisterLogic($_POST);

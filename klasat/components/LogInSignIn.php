@@ -50,7 +50,7 @@
           <div id="errori" style="height:15px; margin-top:-9px ;margin-bottom:7px ;background-color:#1a1a1a;color:red;font-family: montserrat, sans-serif;text-align:center; ">
             <?php
                          $Msg="";
-                         if(isset($_GET['error'])){
+                         if(isset($_GET['erroriReg'])){
                          $Msg=" Please Fill All Your Data ";
                          echo $Msg;    
                                     }             
@@ -82,7 +82,7 @@
               <i class="fas fa-lock"></i>
               <input type="password" name="cpassword" placeholder="Confirm Password" />
             </div>
-            <input type="submit" name="submit" class="btn" value="Krijo" />
+            <input type="submit" name="submit2" class="btn" value="Krijo" />
             
           </form>
         </div>
