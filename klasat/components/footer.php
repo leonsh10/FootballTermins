@@ -7,8 +7,8 @@
             </div>
             <div class="footerLinks size">
                 <h5>EXPLORE</h5>
-                <a href="index.php">Kryefaqja</a>
-                <a href="./components/Historia.php">Historia</a>
+                <a href="./index.php">Kryefaqja</a>
+                <a href="./Historia.php">Historia</a>
                 <a href="#">Terminet</a>
                 <a href="#">Shto Terminin</a>
             </div>
