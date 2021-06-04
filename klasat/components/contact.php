@@ -18,7 +18,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
   </head>
-  <body>
   <header>
         <a href="index.php"><img class="llogo" src="../../Pics/logo1.png" alt=""></a>
         <div class="topnav">
@@ -33,6 +32,7 @@
             <a class="login" href="./LogInSignIn.php">Log In/Sign Up</a>
         </div>
     </header> 
+    <body>
     <div class="container">
       <span class="big-circle"></span>
       <img src="img/shape.png" class="square" alt="" />
@@ -127,6 +127,7 @@
         </div>
       </div>
     </div>
+                                              </body>
     <footer>
         <div class="footerContent">
             <div class="footerleft size">
@@ -166,5 +167,4 @@
         </div>
     </footer>
     <script src="../../JS/app.js"></script>
-  </body>
 </html>
