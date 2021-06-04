@@ -19,8 +19,13 @@ body{
 }
 
 .footerleft:last-child{
-    /* padding-top: 5px; */
+    /* width:150px !important; */
 } 
+
+.footerCopyRights{
+    width:129px !important;
+
+}
 .footerLinks{
     display: flex;
     flex-direction: column;
