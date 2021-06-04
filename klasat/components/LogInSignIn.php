@@ -22,7 +22,7 @@
       <div class="forms-container">
         <div class="signin-signup">
           <form action="../../php/LoginRegister/validimLogin.php" method="post" class="sign-in-form">
-            <div id="errori" style="height:30px;margin-top:-15px; background-color:#1a1a1a;color:red;font-family: montserrat, sans-serif;text-align:center; ">
+            <div id="errori" style="height:30px; background-color:#272727;color:red;font-family: montserrat, sans-serif;text-align:center; ">
               <?php
                       $Msg="";
                       if(isset($_GET['error'])){
@@ -54,7 +54,7 @@
          
 
           <form action="../../php/LoginRegister/validimRegister.php" method="post" class="sign-up-form">
-          <div id="errori" style="height:10px;  ;margin-bottom:7px ;background-color:#1a1a1a;color:red;font-family: montserrat, sans-serif;text-align:center; ">
+          <div id="errori" style="height:10px;  ; ;background-color:#272727;color:red;font-family: montserrat, sans-serif;text-align:center; ">
             <?php
                          $Msg="";
                          if(isset($_GET['erroriReg'])){
@@ -77,7 +77,7 @@
             </div>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" name="username" placeholder="Username" required />
+              <input type="text" name="username" placeholder="Username"  required/>
             </div>
       
             <div class="input-field">
@@ -86,7 +86,7 @@
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" name="password" placeholder="Password" required />
+              <input type="password" name="password" placeholder="Password"  required/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>

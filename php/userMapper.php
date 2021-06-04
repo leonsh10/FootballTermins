@@ -105,4 +105,13 @@ class UserMapper extends dboconfig
         $statement->execute();
     }
 
+    public function getAllContacts()
+    {
+        $this->query = "select * from contact_us";
+        $statement = $this->conn->prepare($this->query);
+        $statement->execute();
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
 }
