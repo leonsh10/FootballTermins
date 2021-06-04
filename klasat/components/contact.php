@@ -30,7 +30,7 @@
             <a href="about.php">Rreth Nesh</a>
             <a class="login" href="./LogInSignIn.php">Log In/Sign Up</a>
         </div>
-    </header>
+    </header> 
     <div class="container">
       <span class="big-circle"></span>
       <img src="img/shape.png" class="square" alt="" />
