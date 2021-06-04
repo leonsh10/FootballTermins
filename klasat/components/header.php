@@ -23,6 +23,7 @@
             <a href="#">Shto Terminin</a>
             <a href="contact.php">Kontakti</a>
             <a href="about.php">Rreth Nesh</a>
+            <a href="dashboard.php">Dashboard</a>
             <a class="login" href="./LogInSignIn.php">Log In/Sign Up</a>
         </div>
     </header>
