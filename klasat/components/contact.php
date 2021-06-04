@@ -101,7 +101,7 @@
               <label for="">Message</label>
               <span>Message</span>
             </div>
-            <input type="submit" value="Dergo" class="btn" />
+            <input type="submit" name="submit" value="Dergo" class="btn" />
           </form>
         </div>
       </div>

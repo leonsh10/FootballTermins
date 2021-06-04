@@ -50,7 +50,6 @@ private function vEmpty($username, $password)
     }
     return false;
 }
-
 private function usernameAndPasswordCorrect($username, $password)
 {
     $mapper = new UserMapper();
@@ -60,7 +59,7 @@ private function usernameAndPasswordCorrect($username, $password)
         if ($user['role'] == 1) {
             $obj = new Admin($user['emri'],$user['mbiemri'],$user['username'], $user['email'],$user['password'],$user['cpassword'],$user['role']);
             $obj->setSession();
-            $_SESSION['username']=$_REQUEST['username'];
+            // $_SESSION['username']=$_REQUEST['username'];
         } else {
             $obj = new SimpleUser($user['emri'],$user['mbiemri'],$user['username'],$user['email'],$user['password'],$user['cpassword'],$user['role']);
             $obj->setSession();
