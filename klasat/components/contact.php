@@ -25,7 +25,11 @@
             <a href="index.php">Kryefaqja</a>
             <a href="Historia.php">Historia</a>
             <a href="#">Terminet</a>
+<<<<<<< HEAD
             <!-- <a href="#">Shto Terminin</a> -->
+=======
+            
+>>>>>>> f8e40be6661fc43f4da4b154348edfdbfc033571
             <a href="contact.php">Kontakti</a>
             <a href="about.php">Rreth Nesh</a>
             <a href="dashboard.php">Dashboard</a>
