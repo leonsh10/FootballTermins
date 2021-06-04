@@ -92,12 +92,12 @@ class UserMapper extends dboconfig
 
     public function insertContact(\contact $contact)
     {
-        $this->query = "insert into contact_us (username,email,phone,message) values (:username,:email,:phone,:message";
+        $this->query = "insert into contact_us (username,email,phone,message) values (:username,:email,:phone,:message)";
         $statement = $this->conn->prepare($this->query);
         $username = $contact->getUsername();
         $email = $contact->getEmail();
         $phone = $contact->getPhone();
-        $email = $user->getEmail();
+        $message = $contact->getMessage();
         $statement->bindParam(":username", $username);
         $statement->bindParam(":email", $email);
         $statement->bindParam(":phone", $phone);

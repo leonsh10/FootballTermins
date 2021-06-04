@@ -79,10 +79,29 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="index.html" autocomplete="off">
+          <form action="../../php/contact/validimContact.php" method="post"  autocomplete="off">
+          <div id="errori" style="height:20px;width:fit-content; ;background-color:#a0a0a0;color:#00ff43;font-family: montserrat, sans-serif;text-align:center; ">
+            <?php
+                         $Msg="";
+                         if(isset($_GET['sentSuc'])){
+                         $Msg=" Forma juaj u dergua me sukses!";
+                         echo $Msg;    
+                                    }     
+                                    $Msg1="";
+                                    if(isset($_GET['erroriCon'])){
+                                    $Msg1=" Ploteso te dhenat.";
+                                    echo $Msg1;    
+                                               }       
+                                               $Msg2="";
+                                    if(isset($_GET['erroriCon2'])){
+                                    $Msg2=" Shkruaj numrin sakte!";
+                                    echo $Msg2;    
+                                               }   
+            ?>
+                    </div> 
             <h3 class="title">Na Kontaktoni</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
+              <input type="text" name="username" class="input" />
               <label for="">Username</label>
               <span>Username</span>
             </div>
@@ -97,7 +116,7 @@
               <span>Phone</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
+              <textarea name="message" class="input" ></textarea>
               <label for="">Message</label>
               <span>Message</span>
             </div>

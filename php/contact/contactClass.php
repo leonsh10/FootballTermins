@@ -1,6 +1,6 @@
 <?php
 
-abstract class contact
+class contact
 {
     protected $username;
     protected $email;
@@ -40,6 +40,6 @@ abstract class contact
         return $this->message;
     }
 
-    abstract protected function setSession();
-    abstract protected function setCookie();
+    // abstract protected function setSession();
+    // abstract protected function setCookie();
 }
