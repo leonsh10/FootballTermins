@@ -7,12 +7,12 @@
     <link rel="icon" href="../../Pics/logo.png">
     <link rel="stylesheet" href="../../stilizimi/AboutStyle.css">
     <link rel="stylesheet" href="../../stilizimi/index.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 
 </head>
 <header>
         <a href="index.php"><img class="llogo" src="../../Pics/logo1.png" alt=""></a>
-        <div class="topnav">
         <div class="topnav">
             <a href="index.php">Kryefaqja</a>
             <a href="Historia.php">Historia</a>

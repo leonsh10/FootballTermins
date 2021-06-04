@@ -37,7 +37,7 @@
           </div> 
             <h2 class="title">Kyqu</h2>
             <div style="width: 100%; height: 25px; background-color: #272727;">
-    <a href="index.php" style="float: right; color: black; text-decoration: none; back"><i class="fa fa-home" aria-hidden="true"></i></a> </div>
+    <a href="index.php" style="float: right; color: black; text-decoration: none;"><i class="fa fa-home" aria-hidden="true"></i></a> </div>
             
             <div class="input-field">
               <i class="fas fa-user"></i>
