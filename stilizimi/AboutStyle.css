@@ -1,11 +1,20 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap'); */
 
-*{
+/* body * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     line-height: 1.5;
-    /* font-family: 'Quicksand', sans-serif;  */
+    /* font-family: 'Quicksand', sans-serif; 
+ } */ 
+
+
+
+section *{
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.5;
+    box-sizing: border-box;
 }
 :root{
     --color:#707070;

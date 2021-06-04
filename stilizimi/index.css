@@ -4,11 +4,11 @@ html{
 }
 body{
     margin: 0;
-    padding: 0;
+    padding: 0 ;
 }
 /* Footer */
 .footerContent{
-    padding: 10px;
+    padding: 10px 10px ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -48,7 +48,7 @@ body{
     float: left;
     color: white;
     text-align: center;
-    padding: 33px 25px 26px 25px;
+    padding: 33px 25px 26px 25px ;
     text-decoration: none;
     font-size: 16px;
 }
@@ -78,7 +78,7 @@ header{
     background: #474747;
     height: 30px;
     border-radius: 30px;
-    padding: 10px 20px;
+    padding: 10px 20px ;  
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -137,7 +137,7 @@ header{
     flex-direction: row;
     color: #ffffff;
     box-shadow: 0 4px 8px 0 white;
-    padding: 20px 30px;
+    padding: 20px 30px ;
 }
 
 .teksti{
