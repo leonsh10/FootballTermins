@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="icon" href="../../Pics/logo.png">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Termini YT</title>  
+    <title>Termini YT</title> 
 </head>
 <body>
     <header>
