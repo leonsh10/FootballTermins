@@ -14,8 +14,7 @@
   
   </head>
   <body>
-    <div style="width: 100%; height: 25px; background-color: #272727;">
-    <a href="index.php" style="float: right; color: black; text-decoration: none; back"><i class="fa fa-home" aria-hidden="true"></i></a> </div>
+
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
@@ -34,6 +33,9 @@
           ?>
           </div> 
             <h2 class="title">Kyqu</h2>
+            <div style="width: 100%; height: 25px; background-color: #272727;">
+    <a href="index.php" style="float: right; color: black; text-decoration: none; back"><i class="fa fa-home" aria-hidden="true"></i></a> </div>
+            
             <div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" name="username" placeholder="Username" />
@@ -49,40 +51,43 @@
          
 
           <form action="../../php/LoginRegister/validimRegister.php" method="post" class="sign-up-form">
-          <div id="errori" style="height:15px; margin-top:-9px ;margin-bottom:7px ;background-color:#1a1a1a;color:red;font-family: montserrat, sans-serif;text-align:center; ">
+          <div id="errori" style="height:10px;  ;margin-bottom:7px ;background-color:#1a1a1a;color:red;font-family: montserrat, sans-serif;text-align:center; ">
             <?php
                          $Msg="";
                          if(isset($_GET['erroriReg'])){
-                         $Msg=" Please Fill All Your Data ";
+                         $Msg=" Ploteso te dhenat.";
                          echo $Msg;    
                                     }             
             ?>
                     </div> 
             <h2 class="title">Profil i ri </h2>
+            <div style="width: 100%; height: 25px; background-color: #272727;">
+    <a href="index.php" style="float: right; color: black; text-decoration: none; back"><i class="fa fa-home" aria-hidden="true"></i></a> </div>
+            
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" name="emri" placeholder="Emri" />
+              <input type="text" name="emri" placeholder="Emri" required />
             </div>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" name="mbiemri" placeholder="Mbiemri" />
+              <input type="text" name="mbiemri" placeholder="Mbiemri" required/>
             </div>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" name="username" placeholder="Username" />
+              <input type="text" name="username" placeholder="Username" required />
             </div>
       
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" name="email" placeholder="Email" />
+              <input type="email" name="email" placeholder="Email" required/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" name="password" placeholder="Password" />
+              <input type="password" name="password" placeholder="Password" required />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" name="cpassword" placeholder="Confirm Password" />
+              <input type="password" name="cpassword" placeholder="Confirm Password" required/>
             </div>
             <input type="submit" name="submit2" id="submit2" class="btn" value="Krijo" />
             
@@ -107,7 +112,7 @@
           <div class="content">
             <h3>Keni Llogari ?</h3>
             <p>
-              Kyquni në llogarin që egziston.
+              <!-- Kyquni në llogarin që egziston. -->
             </p>
             <button class="btn transparent" id="sign-in-btn">
               Kyquni
