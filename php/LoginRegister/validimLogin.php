@@ -6,8 +6,12 @@ include_once 'adminClass.php';
 include_once 'simpleUserClass.php';
 require_once '../userMapper.php';
 session_start();
+if (isset($_POST['submit3'])) {
+    
+    header('Location:../../klasat/components/index.php');
+}
 
-if (isset($_POST['submit'])) {
+else if (isset($_POST['submit'])) {
     $login = new LoginLogic($_POST);
     $login->verifyData();
     

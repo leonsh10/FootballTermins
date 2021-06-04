@@ -36,8 +36,8 @@
           ?>
           </div> 
             <h2 class="title">Kyqu</h2>
-            <div style="width: 100%; height: 25px; background-color: #272727;">
-    <a href="index.php" style="float: right; color: black; text-decoration: none;"><i class="fa fa-home" aria-hidden="true"></i></a> </div>
+            <!-- <div style="width: 100%; height: 25px; background-color: #272727;">
+    <a href="index.php" style="float: right; color: black; text-decoration: none;"><i class="fa fa-home" aria-hidden="true"></i></a> </div> -->
             
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -47,8 +47,12 @@
               <i class="fas fa-lock"></i>
               <input type="password" name="password" placeholder="Password" />
             </div>
+            <div style="display:flex; flex-direction:row !important;">
             <input type="submit" name="submit" value="Kyqu" class="btn solid" />
-            
+            <div style="margin-left:10px;">
+            <input type="submit" name="submit3" id="submit3" class="btn" value="Home" />
+            </div>
+                                  </div>
           
           </form>
          
@@ -64,8 +68,8 @@
             ?>
                     </div> 
             <h2 class="title">Profil i ri </h2>
-            <div style="width: 100%; height: 25px; background-color: #272727;">
-    <a href="index.php" style="float: right; color: black; text-decoration: none; back"><i class="fa fa-home" aria-hidden="true"></i></a> </div>
+            <!-- <div style="width: 100%; height: 25px; background-color: #272727;">
+    <a href="index.php" style="float: right; color: black; text-decoration: none; back"><i class="fa fa-home" aria-hidden="true"></i></a> </div> -->
             
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -92,8 +96,12 @@
               <i class="fas fa-lock"></i>
               <input type="password" name="cpassword" placeholder="Confirm Password" required/>
             </div>
-            <input type="submit" name="submit2" id="submit2" class="btn" value="Krijo" />
             
+            <input type="submit" name="submit2" id="submit2" class="btn" value="Krijo" />
+
+         
+           
+                                  
           </form>
         </div>
       </div>
