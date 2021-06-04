@@ -12,10 +12,11 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: rgb(58, 57, 57);
     color: white;
     font-family: 'Poppins', sans-serif;
+    height: auto;
 }
 
 .footerleft:last-child{
@@ -68,7 +69,7 @@ header{
 }
 
 .search {
-    margin: 200px auto;
+    /* margin: 0 auto; */
     background: #474747;
     height: 30px;
     border-radius: 30px;
@@ -91,6 +92,7 @@ header{
     font-size: 16px;
     transition: 0.8s;
     color:white;
+    display: flex;
   }
   
   .search .btn .fas {
@@ -98,8 +100,49 @@ header{
   }
 
   .search1 {
-    background: #272727;
-    height: 100vh;
+    /* height: 50vh; */
     display: flex;
-    
+    flex-direction: row;
+    padding: 10px;
   }
+  .mainContent{
+    background: #272727;
+    height: 100%;
+    padding: 15px;
+  }
+.shto{
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #474747;
+    background: #474747;
+    height: 27px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+.shtoTermin{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.terminet{
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    box-shadow: 0 4px 8px 0 white;
+    padding: 20px 30px;
+}
+
+.teksti{
+    padding: 0;
+}
+.foto{
+    width: 200px;
+    height: 200px;
+    padding-right: 20px;
+}
+.paragraph{
+    height: 10px;
+}
