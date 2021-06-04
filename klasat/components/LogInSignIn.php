@@ -14,12 +14,10 @@
   
   </head>
   <body>
-<<<<<<< HEAD
 
-=======
     <div style="width: 100%; height: 25px; background-color: #272727;">
     <a href="index.php" style="float: right; color: white; text-decoration: none; back"><i class="fa fa-close" aria-hidden="true"></i></a> </div>
->>>>>>> f80edc013e477b6ac8a436e52515093c4ff0f482
+
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
