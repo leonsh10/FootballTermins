@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="terminet">
-          <img src="../../Pics/logo.png" class="foto"/>
+          <img src="../../Pics/stadiumi1.jpeg" class="foto"/>
           <div class="teksti">
             <h4 style="padding-bottom: 35px;">Kerkojme nje mbrojtes te Enjten ne ora 17:00</h4>
             <p class="paragraph"><b>Pozicioni:</b> CB (Mbrojtes)</p>
