@@ -3,7 +3,7 @@
 ?>
     <content class="search1">
     <div class="search">
-      <input type="text" name="search" placeholder="Search..." class="input" />
+      <input type="text" name="search" placeholder="Kerko..." class="input" />
 
       <a href="#" class="btn">
         <i class="fas fa-search"></i>
