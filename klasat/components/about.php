@@ -36,7 +36,7 @@
                     <h1>TERMINI YT </h1>
                     
                     <p>Termini YT eshte nje aplikacion i cili mundeson rezervimin e termineve te futbollin apo edhe kerkimin e lojtareve. Ekipi i Termini YT eshte i perbere nga 5 antare. </p>
-                    <a href="#" class="btn">Kontakto me ne</a>
+                    <a href="contact.php" class="btn">Kontakto me ne</a>
                 </div>
             </div>
         </div>
