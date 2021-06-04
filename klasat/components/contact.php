@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Termini YT
     </title>
+    <link rel="icon" href="../../Pics/logo.png">
     <link rel="stylesheet" href="../../stilizimi/ContactStyle.css" />
     <link rel="stylesheet" href="../../stilizimi/index.css">
     <link rel="icon" href="logo.png">
@@ -26,6 +27,7 @@
             <a href="#">Terminet</a>
             <a href="#">Shto Terminin</a>
             <a href="contact.php">Kontakti</a>
+            <a href="about.php">Rreth Nesh</a>
             <a class="login" href="./LogInSignIn.php">Log In/Sign Up</a>
         </div>
     </header>
@@ -142,6 +144,6 @@
             </div>
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="../../JS/app.js"></script>
   </body>
 </html>
