@@ -5,10 +5,12 @@ include_once '../../php/LoginRegister/simpleUserClass.php';
   
 
 session_start();
-// $emri=$_SESSION['username'];
+$emri=$_SESSION['username'];
+if (isset($_SESSION["role"]) && $_SESSION['role'] == '1') {
 $mapper =  new UserMapper();
 $userList = $mapper->getAllUsers();
 $contactList=$mapper->getAllContacts();
+}
 include './header.php'
 ?>
 

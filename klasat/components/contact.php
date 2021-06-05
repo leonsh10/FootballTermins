@@ -1,4 +1,7 @@
+<?php
+session_start();
 
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,8 +31,26 @@
             <!-- <a href="#">Shto Terminin</a> -->
             <a href="contact.php">Kontakti</a>
             <a href="about.php">Rreth Nesh</a>
-            <a href="dashboard.php">Dashboard</a>
-            <a class="login" href="./LogInSignIn.php">Log In/Sign Up</a>
+            <?php
+      if (isset($_SESSION['role']) && $_SESSION['role'] =='1')  {
+      ?>
+        <a href="dashboard.php">Dashboard</a>
+      <?php
+      }
+      ?>
+            <?php
+      if (isset($_SESSION['role']))  {
+      ?>
+         <a class="login" href="../../php/LoginRegister/logout.php">LOGOUT</a> 
+      <?php
+      }
+      else{
+          ?>
+          
+          <a class="login" href="./LogInSignIn.php">LOGIN</a>
+        <?php
+      }
+      ?>
         </div>
     </header> 
     <body>

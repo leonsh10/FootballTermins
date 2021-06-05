@@ -7,6 +7,7 @@ include_once 'simpleUserClass.php';
 include_once 'personClass.php';
 require_once '../userMapper.php';
 session_start();
+
 if (isset($_POST['submit3'])) {
     
     header('Location:../../klasat/components/index.php');
@@ -14,8 +15,7 @@ if (isset($_POST['submit3'])) {
 
 else if (isset($_POST['submit'])) {
     $login = new LoginLogic($_POST);
-    $login->verifyData();
-    
+    $login->verifyData();    
 } 
  else {
     header('Location:../../klasat/components/LogInSignIn.php');
@@ -58,15 +58,15 @@ private function vEmpty($username, $password)
 private function usernameAndPasswordCorrect($username, $password)
 {
     $mapper = new UserMapper();
-    $user = $mapper->getUserByUsername($username);
-    if ($user == null || count($user) == 0)   header('Location:../../klasat/components/LogInSignIn.php?error');
-    else if (password_verify($password,$user['password']))  {
-        if ($user['role'] == 1) {
-            $obj = new Admin($user['emri'],$user['mbiemri'],$user['username'], $user['email'],$user['password'],$user['cpassword'],$user['role']);
+    $useri = $mapper->getUserByUsername($username);
+    if ($useri == null || count($useri) == 0)   header('Location:../../klasat/components/LogInSignIn.php?error');
+    else if (password_verify($password,$useri['password']))  {
+        if ($useri['role'] == 1) {
+            $obj = new Admin($useri['emri'],$useri['mbiemri'],$useri['username'], $useri['email'],$useri['password'],$useri['cpassword'],$useri['role']);
             $obj->setSession();
             $_SESSION['username']=$_REQUEST['username'];
         } else {
-            $obj = new SimpleUser($user['emri'],$user['mbiemri'],$user['username'],$user['email'],$user['password'],$user['cpassword'],$user['role']);
+            $obj = new SimpleUser($useri['emri'],$useri['mbiemri'],$useri['username'],$useri['email'],$useri['password'],$useri['cpassword'],$useri['role']);
             $obj->setSession();
         }
         return true;
