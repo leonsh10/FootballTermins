@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+      
+  
+  body{
+      background-color: #474747;
+      
+  }
+.tabela{
+
+    width: 550px;
+    height: 570px;
+    background: #272727;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 20px 30px;
+    
+
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+  }
+  .input-container {
+    position: relative;
+    margin: 1rem 0;
+  }
+  
+  .input {
+    width: 100%;
+    outline: none;
+    border: 2px solid #fff;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+  .drop1{
+    width: 50%;
+    outline: none;
+    border: 2px solid #fff;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+ 
+  }
+  .drop1 {
+      background: #272727;
+      color: #fff;
+  }
+  .drop2{
+    width: 50%;
+    outline: none;
+    border: 2px solid #fff;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+
+  }
+  .drop2 {
+      background: #272727;
+      color: #fff;
+  }
+  .drop3{
+    width: 50%;
+    outline: none;
+    border: 2px solid #fff;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+
+  }
+  .drop3 {
+      background: #272727;
+      color: #fff;
+  }
+  .Data{
+    width: 40%;
+    outline: none;
+    border: 2px solid #fff;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+  .Data{
+    background: #272727;
+    color: #fff;
+  }
+  .ora{
+    width: 40%;
+    outline: none;
+    border: 2px solid #fff;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+  .ora{
+    background: #272727;
+    color: #fff;
+  }
+ .submit{
+    width: 30%;
+    outline: none;
+    border: 2px solid #fff;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+    float: right;
+ }
+ .submit{
+    background: #272727;
+    color: #fff;
+ }
+ .drop4{
+  width: 50%;
+  outline: none;
+  border: 2px solid #fff;
+  background: none;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+ }
+ .drop4{
+  background: #272727;
+  color: #fff;
+ }
