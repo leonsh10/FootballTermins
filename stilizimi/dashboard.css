@@ -130,3 +130,8 @@ input[type="submit"]{
   #butonFshij a{
     color:whitesmoke;
   }
+
+  #mesazhi{
+    width:25%;
+    overflow-wrap: break-word;
+  }

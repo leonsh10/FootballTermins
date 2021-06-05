@@ -8,6 +8,7 @@ session_start();
 // $emri=$_SESSION['username'];
 $mapper =  new UserMapper();
 $userList = $mapper->getAllUsers();
+$contactList=$mapper->getAllContacts();
 include './header.php'
 ?>
 
@@ -48,7 +49,7 @@ include './header.php'
                                         <td><?php echo $user['username']; ?></td>
                                         <td><?php echo $user['email']; ?></td>
                                         <td><?php echo $user['role']; ?></td>
-                                        <td><button id="butonFshij" style="margin-bottom:10px;"><a style="text-decoration:none;" href=<?php echo "../../php/LoginRegister/deleteUser.php?id=" . $user['id_user'];
+                                        <td><button id="butonFshij" style="margin-bottom:10px;"><a style="text-decoration:none;" href=<?php echo "../../php/LoginRegister/deleteUser.php?id_user=" . $user['id_user'];
                                                     ?>>Fshij</button>
                                                     <button id="butonFshij"><a style="text-decoration:none;" href="#">Edit</button></td>
                                                    
@@ -59,6 +60,39 @@ include './header.php'
                                 ?>
             </tbody>
         </table>
+        <div style="display:flex;justify-content:center;">
+        <h2 id="titulliTabeles">Contact Us</h2>
+</div>
+<table>
+    <thead>
+        <tr>
+            <td >Username</td>
+            <td >Email</td>
+            <td >Phone</td>
+            <!-- <td >Message</td> -->
+
+            <td id="mesazhi">Mesazhi</td>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+                    
+                    if (is_array($contactList) || is_object($contactList))
+                {
+                    foreach ($contactList as $contact) {
+                        ?>
+                            <tr>
+                            <td><?php echo $contact['username']; ?></td>
+                            <td><?php echo $contact['email']; ?></td>
+                                <td><?php echo $contact['phone']; ?></td>
+                                <td  id="mesazhi"><?php echo $contact['message']; ?></td>
+                            </tr>
+                        <?php
+                        }
+                    }
+                        ?>
+    </tbody>
+</table>
 
 </div>
 </body>
