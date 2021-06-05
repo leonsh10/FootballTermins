@@ -7,7 +7,7 @@ session_start();
       <div class="mainContent">
         <div class="search1">
           <div class="shtoTermin">
-          <a href="#" class="shto">
+          <a href="ShtoTermin.html" class="shto">
               <i class="fas fa-plus"></i>Shto terminin
             </a>
           </div>
