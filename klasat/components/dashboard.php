@@ -51,7 +51,7 @@ include './header.php'
                                         <td><?php echo $user['role']; ?></td>
                                         <td><button id="butonFshij" style="margin-bottom:10px;"><a style="text-decoration:none;" href=<?php echo "../../php/LoginRegister/deleteUser.php?id_user=" . $user['id_user'];
                                                     ?>>Fshij</button>
-                                                    <button id="butonFshij"><a style="text-decoration:none;" href="#">Edit</button></td>
+                                                    <!-- <button id="butonFshij"><a style="text-decoration:none;" href="#">Edit</button></td> -->
                                                    
                                     </tr>
                                 <?php
