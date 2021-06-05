@@ -1,0 +1,132 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgb(243, 182, 243);
+  }
+  
+  thead th:nth-child(1) {
+    width: 10%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+
+  thead th:nth-child(4) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(5) {
+    width: 40%;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+
+  thead,th {
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody, td {
+    text-align: center;
+  }
+
+  
+  thead {
+    color: #efb7b7;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  thead  {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    /* border: 1px solid purple; */
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #837c81;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #685f68;
+  }
+   
+  table {
+    background-color: rgb(30, 59, 34);
+  }
+
+#titulliTabeles{
+    color:#a0a0a0f5;
+    font-family:sans-serif;
+    /* margin-left:480px; */
+}
+
+
+#mesazhi{
+  width:25%;
+  overflow-wrap: break-word;
+}
+
+
+
+input[type="submit"]{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #1c89ff;
+    border: solid 1px transparent;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    margin-top:35px;
+    margin-left:224px;
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: transparent;
+    border-color: red;
+    transition: all .1s ease-in-out;
+  }
+  
+  
+  #butonFshij{
+    width:100px;
+    padding:0.3em 1.2em;
+    background-color:#4eb5f1;
+    font-size:20px;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    font-family:'Roboto',sans-serif;
+    border:none;
+    opacity:80%;
+    transition: all 0.2s;
+    text-align:center;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  }
+  
+  #butonFshij:hover{
+    background-color:#4095c6;
+    }
+  
+  #butonFshij a{
+    color:whitesmoke;
+  }
