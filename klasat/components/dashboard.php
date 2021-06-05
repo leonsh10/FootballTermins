@@ -23,7 +23,7 @@ include './header.php'
 <body style="background-color:#272727;">
 <div id="users">
 <div style="display:flex;justify-content:center;">
-<h2 id="titulliTabeles">Votuesit</h2>
+<h2 id="titulliTabeles">Lojtaret</h2>
 </div>
         <table>
             <thead>
