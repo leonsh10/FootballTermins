@@ -10,7 +10,7 @@
                 <a href="./index.php">Kryefaqja</a>
                 <a href="./Historia.php">Historia</a>
                 <a href="#">Terminet</a>
-                <a href="#">Shto Terminin</a>
+                <a href="./ShtoTermin.php">Shto Terminin</a>
             </div>
             <div class="footerAddress size">
                 <h5>VISIT</h5>
