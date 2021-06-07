@@ -114,4 +114,44 @@ class UserMapper extends dboconfig
         return $result;
     }
 
+    
+    public function insertTermin(\termin $termin)
+    {
+        $this->query = "insert into terminet (emertimi,pozicioni,komuna,transporti,fusha,ora, data,foto) values (:emertimi,:pozicioni,:komuna,:transporti,:fusha,:ora,:data,:foto)";
+        $statement = $this->conn->prepare($this->query);
+        $emertimi = $termin->getEmertimi();
+        $pozicioni = $termin->getPozicioni();
+        $komuna = $termin->getKomuna();
+        $transporti = $termin->getTransporti();
+        $fusha = $termin->getFusha();
+        $ora = $termin->getOra();
+        $data = $termin->GetData();
+        $foto = $termin->getFoto();
+        $statement->bindParam(":emertimi", $emertimi);
+        $statement->bindParam(":pozicioni", $pozicioni);
+        $statement->bindParam(":komuna", $komuna);
+        $statement->bindParam(":transporti", $transporti);
+        $statement->bindParam(":fusha", $fusha);
+        $statement->bindParam(":ora", $ora);
+        $statement->bindParam(":data", $data);
+        $statement->bindParam(":foto", $foto);
+        $statement->execute();
+    }
+
+    public function getAllTerminet()
+    {
+        $this->query = "select * from terminet";
+        $statement = $this->conn->prepare($this->query);
+        $statement->execute();
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function deleteTermin($id_termini)
+    {
+        $this->query = "delete from terminet where id_termini=:id_termini";
+        $statement = $this->conn->prepare($this->query);
+        $statement->bindParam(":id_termini", $id_termini);
+        $statement->execute();
+    }
 }

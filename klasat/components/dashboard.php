@@ -10,6 +10,7 @@ if (isset($_SESSION["role"]) && $_SESSION['role'] == '1') {
 $mapper =  new UserMapper();
 $userList = $mapper->getAllUsers();
 $contactList=$mapper->getAllContacts();
+$terminList=$mapper->getAllTerminet();
 }
 include './header.php'
 ?>
@@ -97,6 +98,51 @@ include './header.php'
 </table>
 
 </div>
+<div style="display:flex;justify-content:center;">
+<h2 id="titulliTabeles">Terminet</h2>
+                </div>
+</div>
+        <table>
+            <thead>
+                <tr>
+                    <td >Emertimi</td>
+                    <td >Pozicioni</td>
+                    <td >Komuna</td>
+                    <td>Transporti</td>
+                    <td>Fusha</td>
+                    <td>Ora</td>
+                    <td>Data</td>
+                    <td>Foto</td>
+                    <td >Fshij/Edit</td>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                            
+                            if (is_array($terminList) || is_object($terminList))
+                        {
+                            foreach ($terminList as $termin) {
+                                ?>
+                                    <tr>
+                                    <td><?php echo $termin['emertimi']; ?></td>
+                                        <td><?php echo $termin['pozicioni']; ?></td>
+                                        <td><?php echo $termin['komuna']; ?></td>
+                                        <td><?php echo $termin['transporti']; ?></td>
+                                        <td><?php echo $termin['fusha']; ?></td>
+                                        <td><?php echo $termin['ora']; ?></td>
+                                        <td><?php echo $termin['data']; ?></td>
+                                        <td><?php echo $termin['foto']; ?></td>
+                                        <td><button id="butonFshij" style="margin-bottom:10px;"><a style="text-decoration:none;" href=<?php echo "../../php/terminet/deleteTermin.php?id_termini=" . $termin['id_termini'];
+                                                    ?>>Fshij</button>
+                                                    <button id="butonFshij"><a style="text-decoration:none;" href="#">Edit</button></td>
+                                                   
+                                    </tr>
+                                <?php
+                                }
+                            }
+                                ?>
+            </tbody>
+        </table>
 </body>
 
 
