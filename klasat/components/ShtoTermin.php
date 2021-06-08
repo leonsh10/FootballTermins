@@ -8,7 +8,7 @@ session_start();
 
 <html lang="en" dir="ltr">
   <head>
-    <!-- <meta charset="UTF-8"> -->
+     <meta charset="UTF-8"> 
     <title> Termini YT </title>
     <link rel="stylesheet" href="../../stilizimi/ShtoTermin.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
@@ -139,6 +139,6 @@ session_start();
 </body>
 </html>
 
-<?php 
+<?php  
     include './footer.php'
 ?>

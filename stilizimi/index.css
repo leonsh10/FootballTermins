@@ -152,6 +152,22 @@ header{
 .paragraph{
     height: 10px;
 }
+.checked {
+    color: orange;
+}
+
+.terminet1{
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    /* box-shadow: 0 4px 8px 0 white; */
+    padding: 20px 30px ;
+    border: 1px solid white;
+    border-radius: 30px;
+    border-right: none;
+    border-left: none;
+}
+
 
 @media only screen and (max-width: 1024px){
     .footerContent{
