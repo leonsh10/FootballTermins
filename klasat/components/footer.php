@@ -7,9 +7,9 @@
             </div>
             <div class="footerLinks size">
                 <h5>EXPLORE</h5>
-                <a href="./index.php">Kryefaqja</a>
+                <a href="./index.php">Terminet</a>
                 <a href="./Historia.php">Historia</a>
-                <a href="#">Terminet</a>
+                
                 <a href="./ShtoTermin.php">Shto Terminin</a>
             </div>
             <div class="footerAddress size">

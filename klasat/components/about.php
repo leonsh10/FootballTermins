@@ -17,9 +17,9 @@ session_start();
 <header>
         <a href="index.php"><img class="llogo" src="../../Pics/logo1.png" alt=""></a>
         <div class="topnav">
-            <a href="index.php">Kryefaqja</a>
+            <a href="index.php">Terminet</a>
             <a href="Historia.php">Historia</a>
-            <a href="#">Terminet</a>
+            <!-- <a href="#">Terminet</a> -->
             <!-- <a href="#">Shto Terminin</a> -->
             <a href="contact.php">Kontakti</a>
             <a href="about.php">Rreth Nesh</a>
@@ -71,10 +71,10 @@ session_start();
             </div>
             <div class="footerLinks size">
                 <h5>EXPLORE</h5>
-                <a href="./index.php">Kryefaqja</a>
+                <a href="./index.php">Terminet</a>
                 <a href="./Historia.php">Historia</a>
-                <a href="#">Terminet</a>
-                <a href="#">Shto Terminin</a>
+                <!-- <a href="#">Terminet</a> -->
+                <a href="ShtoTermin.php">Shto Terminin</a>
             </div>
             <div class="footerAddress size">
                 <h5>VISIT</h5>
